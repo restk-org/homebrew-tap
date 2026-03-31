@@ -13,7 +13,7 @@
 class RestkCli < Formula
   desc "RESTk API client CLI — import, export, run, sync"
   homepage "https://restk.ai"
-  version "0.7.0"
+  version "0.7.1"
   license "Proprietary"
 
   # Update these URLs and checksums on each release
@@ -21,20 +21,20 @@ class RestkCli < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://releases.restk.ai/restk-cli-releases/production/cli/v#{version}/restk-cli-v#{version}-darwin-arm64.tar.gz"
-      sha256 "f7706f26b59021bfd2d74c95a49d6a320575b4e292039b855d8480a00aada402"
+      sha256 "9a15647a25d7537e1cac801ab1493fa987a708ca7dd34c02b313a8b773e4eba6"
     else
       url "https://releases.restk.ai/restk-cli-releases/production/cli/v#{version}/restk-cli-v#{version}-darwin-amd64.tar.gz"
-      sha256 "dcaa846d5768458d87531389409ea292bed82dd926179cd576b067dd50458b5b"
+      sha256 "6285f2f9c3cf9fad320bf1212db28cf9a303e8b0fca0ac1cbdd3aa2cd3dd707f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://releases.restk.ai/restk-cli-releases/production/cli/v#{version}/restk-cli-v#{version}-linux-arm64.tar.gz"
-      sha256 "ffbe78c383a6173345fca1792a733efa51b40847d8dce86e957e3a67365bcb63"
+      sha256 "1d7efe2efdabd47f77a099568337409a4d7e6ddedaf88d1776ca61f827e93a0b"
     else
       url "https://releases.restk.ai/restk-cli-releases/production/cli/v#{version}/restk-cli-v#{version}-linux-amd64.tar.gz"
-      sha256 "7b46451e743fcebf8225215e1b0688a3c4b3fda2782c856fb044306de7ac1cfa"
+      sha256 "f5a0ae9c66f5b94837c4a75c18c98557bc00fc8f1d6d6eadc5bf4ff0690131ef"
     end
   end
 
